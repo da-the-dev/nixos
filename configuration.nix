@@ -75,9 +75,6 @@
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
   nixpkgs.config.allowUnfree = true;
 
-  # nixpkgs.config.packageOverrides = pkgs: {
-  #   intel-vaapi-driver = pkgs.intel-vaapi-driver.override { enableHybridCodec = true; };
-  # };
   hardware.opengl = {
     enable = true;
     extraPackages = with pkgs; [
@@ -86,6 +83,9 @@
       libvdpau-va-gl
     ];
   };
+  hardware.bluetooth.enable = true; # enables support for Bluetooth
+  hardware.bluetooth.powerOnBoot = true; # powers up the default Bluetooth controller on boot
+
   environment.sessionVariables = {
     LIBVA_DRIVER_NAME = "iHD"; # Force intel-media-driver
     MOZ_ENABLE_WAYLAND = 1;
