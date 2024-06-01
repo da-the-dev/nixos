@@ -58,6 +58,7 @@
     neovim vim git
     wget
     home-manager
+    stow
     libva-utils
   ];
   environment.sessionVariables.NIXOS_OZONE_WL = "1";
