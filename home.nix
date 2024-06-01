@@ -11,6 +11,7 @@
       vscode
       telegram-desktop
       ranger
+      pavucontrol
     ];
   };
 
