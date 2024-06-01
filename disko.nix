@@ -19,7 +19,7 @@
             };
 
             swap = {
-	      # CHANGE IF NECESSARY
+              # CHANGE IF NECESSARY
               size = "16G";
               content = {
                 type = "swap";
