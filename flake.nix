@@ -17,7 +17,7 @@
       inherit system;
       modules = [
         ./configuration.nix
-	# nur.nixosModules.nur
+        # nur.nixosModules.nur
       ];
     };
 
