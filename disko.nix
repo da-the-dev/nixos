@@ -3,7 +3,7 @@
     disk = {
       my-disk = {
       	# CHANGE IF NECESSARY
-        device = "/dev/sda";
+        device = "/dev/nvme0n1";
         type = "disk";
         content = {
           type = "gpt";
